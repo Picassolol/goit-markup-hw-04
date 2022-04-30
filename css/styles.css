@@ -168,6 +168,7 @@ img {
     url('../images/hero/hero-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -356,7 +357,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  
 }
 
 .permanent-clients-list {
@@ -374,7 +374,7 @@ img {
   align-items: center;
 
   color: var(--team-icon-color);
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -384,15 +384,12 @@ img {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-  
 
 .permanent-clients-icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-
-
 
 /* edn-permanent-clients */
 
@@ -402,6 +399,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo {
@@ -437,6 +439,50 @@ a[href="https://goo.gl/maps/GkhVgALrAWbUuMnt9"]
 {
   color: var(--secondary-accent-color);
 }
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-accent-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-icon {
+  width: 20px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* end-footer */
 
 /* portfolio */
